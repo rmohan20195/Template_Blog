@@ -1,0 +1,200 @@
+﻿
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* All Style */
+* {
+    box-sizing: border-box;
+    border-radius:12px;
+}
+/* Body */
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    background: #f2f2f2;
+}
+
+body:after {
+    background: linear-gradient(to right, #ffbf00 0%, #00ffbf 10%,#ff00ff 20%, #00ffff 30%,#ff0080 40%,#ffff00 50%, #ff8000 60%, #00bfff 70%, #ff0040 80%, #80ff00 90%, #bf00ff 100%);
+    position: fixed;
+    content: '';
+    height: 4px;
+    right: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 3px;
+    font-size: 16px;
+    text-align: center;
+    background: white;
+    overflow:auto;
+}
+
+/* Left column */
+.leftcolumn {
+    float: left;
+    width: 25%;
+    top: 0;
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+/* center column */
+.centercolumn {
+    float: left;
+    width: 50%;
+    padding-left: 20px;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    /*padding: 30px;*/
+}
+.fakeimg-lg{
+    height:350px;
+}
+.fakeimg-md {
+    height: 180px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 3px;
+    text-align: center;
+    background: white;
+    margin-top: 20px;
+}
+
+/* Vertical Menu */
+.vertical-menu a {
+    background-color: #eee;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    margin:8px;
+    font-weight:bold
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+/* Image Style */
+.set-img {
+    height: 100%;
+    width: 100%;
+}
+
+/* Chip Image */
+.chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+    float: right;
+    margin: 10px 10px 0 0;
+}
+
+.chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+/* Responsive Style Starts */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .centercolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+    .leftcolumn{
+        position:inherit;
+    }
+    .fa {
+        width: 18%
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        padding :5px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    body {
+        padding: 2px;
+    }
+    .card, h2, .footer{
+        margin-top:10px;
+    }
+}
+/* Responsive Style Ends */
+
+
+
+/* font awesome icons color */
+.fa {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    width:20%
+}
+
+.fa-facebook {
+    background: #3B5998;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+}
+
+.fa-google {
+    background: #dd4b39;
+}
+
+.fa-instagram {
+    background: #e56969;
+}
+
+h2 a{
+    text-decoration:none;
+}
