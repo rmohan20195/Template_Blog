@@ -1,6 +1,6 @@
 {
   "short_name": "Blog Template",
-  "name": "BetaPage",
+  "name": "Blog Template",
   "theme_color": "#FF0000",
   "background_color": "#F7F8F9",
   "display": "standalone",
@@ -26,5 +26,5 @@
       "sizes": "192x192"
     }
   ],
-  "start_url": "/index.html"
+  "start_url": "index.html"
 }
